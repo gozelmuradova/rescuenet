@@ -1,0 +1,152 @@
+.App {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 0;
+  background: #f4f6f8;
+  color: #222;
+  min-height: 100vh;
+}
+
+/* Hero Header */
+header {
+  background: linear-gradient(90deg, #d32f2f, #ff7043);
+  color: white;
+  padding: 20px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+/* Form */
+.log-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.log-form input,
+.log-form textarea,
+.log-form select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.log-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.log-form button {
+  background: #d32f2f;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.log-form button:hover {
+  background: #b71c1c;
+}
+
+/* Map */
+.leaflet-container {
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 900px;
+  height: 450px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Map Legend */
+.map-legend {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.map-legend div {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.map-legend span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* Logs */
+.logs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 650px;
+  margin: 30px auto;
+}
+
+.log-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #d32f2f;
+}
+
+.log-card.general {
+  border-left-color: #757575;
+}
+
+.log-card.medical {
+  border-left-color: #388e3c;
+}
+
+.log-card.shelter {
+  border-left-color: #1976d2;
+}
+
+.log-card.supplies {
+  border-left-color: #fbc02d;
+}
+
+.log-card.rescue {
+  border-left-color: #d32f2f;
+}
+
+.log-card strong {
+  color: #333;
+}
+
+.log-card em {
+  font-weight: bold;
+}
