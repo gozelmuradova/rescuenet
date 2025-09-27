@@ -1,0 +1,93 @@
+# 🚨 RescueNet
+
+**Community-powered disaster response tool**
+
+RescueNet is a web application that helps communities coordinate during natural disasters and emergencies. Users can submit reports (e.g., medical help, shelter, supplies, rescue needs) with their location, which are then displayed on a live map for everyone to see.
+
+---
+
+Features
+
+* Submit logs with **name, category, message, and location**
+* Interactive **map with color-coded markers** by category
+* Real-time **list of reported logs**
+* Categories include: General, Medical, Shelter, Supplies, Rescue
+* Powered by a **Flask backend** and **React + Leaflet frontend**
+
+---
+
+Tech Stack
+
+* **Frontend:** React, Leaflet.js, CSS
+* **Backend:** Python Flask, Flask-CORS
+* **Database:** SQLite
+* **APIs:** OpenStreetMap (Nominatim for geocoding)
+
+---
+
+Getting Started
+
+1. Clone the repo
+
+```bash
+git clone https://github.com/gozelmuradova/rescuenet.git
+cd rescuenet
+```
+
+2. Backend Setup (Flask)
+
+```bash
+cd backend
+python3 -m venv venv
+source venv/bin/activate   # On Mac/Linux
+venv\Scripts\activate      # On Windows
+
+pip install flask flask-cors
+python app.py
+```
+
+Backend runs at: **[http://127.0.0.1:5000](http://127.0.0.1:5000)**
+
+3. Frontend Setup (React)
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Frontend runs at: **[http://localhost:3000](http://localhost:3000)**
+
+---
+
+Usage
+
+1. Open the app at `http://localhost:3000`.
+2. Submit a log with your details and location.
+3. See it appear in both the **logs list** and **map**.
+
+---
+
+Demo Screenshots
+
+*Add screenshots of your app running here (map + logs).*
+
+---
+
+Team
+
+* Gozel Muradova (Developer, Designer)
+
+---
+
+Future Improvements
+
+* ✅ User authentication for verified reports
+* ✅ SMS integration for offline disaster reporting
+* ✅ Heatmap visualization of critical areas
+
+---
+
+License
+
+MIT License – free to use and modify.
